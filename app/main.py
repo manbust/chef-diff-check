@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-driver=webdriver.Chrome(r'C:\Program Files (x86)\chromedriver.exe')
+driver=webdriver.Chrome()
 
 text = ''.join(sys.stdin.readlines())    
 
@@ -19,7 +19,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 PCS=''
 
-with open(r'C:\Users\mirror\Desktop\app\PCS.txt') as infile:
+with open('PCS.txt') as infile:
     for line in infile:
         PCS=PCS+line
 
@@ -50,7 +50,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Goose=''
 
-with open(r'C:\Users\mirror\Desktop\app\Goose.txt') as infile:
+with open('Goose.txt') as infile:
     for line in infile:
         Goose=Goose+line
 
@@ -81,7 +81,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Viking=''
 
-with open(r'C:\Users\mirror\Desktop\app\Viking.txt') as infile:
+with open('Viking.txt') as infile:
     for line in infile:
         Viking=Viking+line
 
@@ -112,7 +112,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Autofarm=''
 
-with open(r'C:\Users\mirror\Desktop\app\Autofarm.txt') as infile:
+with open('Autofarm.txt') as infile:
     for line in infile:
         Autofarm=Autofarm+line
 
@@ -143,7 +143,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Fullsail=''
 
-with open(r'C:\Users\mirror\Desktop\app\Fullsail.txt') as infile:
+with open('Fullsail.txt') as infile:
     for line in infile:
         Fullsail=Fullsail+line
 
@@ -174,7 +174,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Jigg=''
 
-with open(r'C:\Users\mirror\Desktop\app\Jigg.txt') as infile:
+with open('Jigg.txt') as infile:
     for line in infile:
         Jigg=Jigg+line
 
@@ -205,7 +205,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Slime=''
 
-with open(r'C:\Users\mirror\Desktop\app\Slime.txt') as infile:
+with open('Slime.txt') as infile:
     for line in infile:
         Slime=Slime+line
 
@@ -236,7 +236,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Deflate=''
 
-with open(r'C:\Users\mirror\Desktop\app\Deflate.txt') as infile:
+with open('Deflate.txt') as infile:
     for line in infile:
         Deflate=Deflate+line
 
@@ -267,7 +267,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Blizzard=''
 
-with open(r'C:\Users\mirror\Desktop\app\Blizzard.txt') as infile:
+with open('Blizzard.txt') as infile:
     for line in infile:
         Blizzard=Blizzard+line
 
@@ -298,7 +298,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/d
 
 Panther=''
 
-with open(r'C:\Users\mirror\Desktop\app\Blizzard.txt') as infile:
+with open('Panther.txt') as infile:
     for line in infile:
         Panther=Panther+line
 
