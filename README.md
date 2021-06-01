@@ -4,7 +4,7 @@ This is a simple python script that uses selenium webdriver. Its purpose is to d
 
 ## Installation
 
-You must have Google Chrome and chromedriver to use this script. You can download chromedriver [here](https://chromedriver.chromium.org/downloads), and then add the executable to your PATH.
+You must have Google Chrome and chromedriver to use this script. Download chromedriver [here](https://chromedriver.chromium.org/downloads), and then add the executable to your PATH.
 This script works on all operating systems.
 
 ## Usage
