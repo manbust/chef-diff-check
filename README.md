@@ -15,6 +15,7 @@ You can run this script directly from your terminal.
 $ cd app
 $ python main.py
 ```
+Once the script is running, simply paste your desire masterchef contract into your terminal, press return then send an EOF (either ctrl+D or ctrl+z depending on your machine).
 
 ## Sample output
 
