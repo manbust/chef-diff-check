@@ -196,37 +196,6 @@ driver.find_element_by_xpath("/html/body/div[8]/div/div/div/div[2]/div/form/div/
 
 print("Jigg \n" + additions + "\n" + removals + "\n" + pyperclip.paste() + "\n")
 
-########Slime Chef Diffcheck########
-
-driver.get("https://www.diffchecker.com/")
-pyperclip.copy(text)
-#driver.find_element_by_xpath("/html/body/div[6]/div/div/div/div[2]/div/div[2]/div[2]/a").click()
-driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div/div[2]/div[2]/div").send_keys(Keys.CONTROL, 'v')
-
-Slime=''
-
-with open('Slime.txt') as infile:
-    for line in infile:
-        Slime=Slime+line
-
-pyperclip.copy(Slime)
-
-
-driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/form/div[1]/div[1]/div[2]/div/div[2]/div[2]/div").send_keys(Keys.CONTROL, 'v')
-driver.find_element_by_name("Find Difference").click()
-
-additions = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div[2]/div[2]/span").text
-removals = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div[2]/div[1]/span").text
-
-driver.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/div/div/div/div/div/div/div[2]/div[3]/div[2]/div/div[3]/div/button[2]").click()
-driver.implicitly_wait(3)
-driver.find_element_by_xpath("/html/body/div[7]/div/div/div/div[2]/form/input").send_keys('Slime Diff')
-driver.find_element_by_xpath("/html/body/div[7]/div/div/div/div[2]/div[2]/button").click()
-driver.implicitly_wait(3)
-driver.find_element_by_xpath("/html/body/div[8]/div/div/div/div[2]/div/form/div/button").click()
-
-print("Slime \n" + additions + "\n" + removals + "\n" + pyperclip.paste() + "\n")
-
 ########Deflate Chef Diffcheck########
 
 driver.get("https://www.diffchecker.com/")
